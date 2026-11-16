@@ -1,84 +1,181 @@
+const audienceCards = [
+  {
+    icon: "▣",
+    title: "For Institutes",
+    text: "Manage admissions, classes and performance with ease.",
+  },
+  {
+    icon: "▤",
+    title: "For Teachers",
+    text: "Plan, teach and track progress effortlessly.",
+  },
+  {
+    icon: "◆",
+    title: "For Students",
+    text: "Learn at your own pace and reach new heights.",
+  },
+  {
+    icon: "●",
+    title: "For Parents",
+    text: "Stay informed, support learning and celebrate growth.",
+  },
+];
+
 export default function Home() {
   return (
-    <main className="site-shell">
-      <nav className="nav">
-        <div className="brand">
-          <span className="brand-mark">✦</span> classrise
-        </div>
+    <main>
+      <section className="hero-section">
+        <nav className="nav">
+          <div className="brand">
+            <span className="brand-icon">↗</span>
+            <span>
+              Class<span>Rise</span>
+            </span>
+          </div>
 
-        <div className="nav-links">
-          <span>For institutes</span>
-          <span>For teachers</span>
-          <span>For students</span>
-          <span>Sign in</span>
-        </div>
-      </nav>
+          <div className="nav-links">
+            <span>For institutes⌄</span>
+            <span>For teachers⌄</span>
+            <span>For students⌄</span>
+            <button className="sign-in">Sign in</button>
+          </div>
+        </nav>
 
-      <section className="hero">
-        <div className="hero-copy">
-          <p className="eyebrow">THE MODERN LEARNING PLATFORM</p>
+        <div className="hero-content">
+          <div className="hero-copy">
+            <p className="eyebrow">THE MODERN LEARNING PLATFORM</p>
 
-          <h1>Make progress impossible to miss.</h1>
+            <h1>
+              Make progress
+              <strong> impossible to miss.</strong>
+            </h1>
 
-          <p className="lede">
-            One clear place for institutes to connect teaching, learning,
-            and the people who make progress happen.
-          </p>
+            <p className="hero-description">
+              Track. Support. Achieve. — All in one powerful education platform
+              for institutes, teachers, students and parents.
+            </p>
 
-          <button className="primary-button">
-            Explore ClassRise <span>↗</span>
-          </button>
+            <div className="hero-actions">
+              <button className="primary-button">
+                Explore ClassRise <span>→</span>
+              </button>
 
-          <p className="fine-print">
-            Built for ambitious institutes and every learner they support.
-          </p>
-        </div>
-
-        <div className="hero-visual">
-          <div className="glow" />
-
-          <div className="progress-card">
-            <div className="card-top">
-              <span>Institute progress</span>
-              <span className="live-dot">● Live</span>
-            </div>
-
-            <div className="progress-number">
-              82<span>%</span>
-            </div>
-
-            <div className="progress-label">learning momentum</div>
-
-            <div className="progress-line">
-              <i />
-            </div>
-
-            <div className="progress-meta">
-              <span>Up 18% this term</span>
-              <span>Standards 8–10</span>
+              <button className="demo-button">
+                <span className="play-icon">▶</span>
+                Watch demo
+              </button>
             </div>
           </div>
 
-          <div className="mini-card students">
-            <b>95</b>
-            <span>students connected</span>
-          </div>
+          <div className="dashboard-area">
+            <div className="dashboard-glow" />
 
-          <div className="mini-card teachers">
-            <b>24</b>
-            <span>teachers aligned</span>
+            <div className="dashboard">
+              <div className="dashboard-header">
+                <div className="dashboard-brand">
+                  <span className="small-brand-icon">↗</span>
+                  ClassRise
+                </div>
+
+                <span className="date-filter">Last 30 Days⌄</span>
+              </div>
+
+              <div className="dashboard-top">
+                <div className="student-stat">
+                  <div className="stat-icon">●●</div>
+                  <strong>95</strong>
+                  <span>Students</span>
+                  <small>↑ 12% <em>vs. prior period</em></small>
+                </div>
+
+                <div className="line-chart">
+                  <span className="chart-value">92%</span>
+                  <div className="chart-line">
+                    <i />
+                    <i />
+                    <i />
+                    <i />
+                    <i />
+                    <i />
+                    <i />
+                  </div>
+                </div>
+              </div>
+
+              <div className="learning-progress">
+                <div>
+                  <h3>Learning Progress</h3>
+
+                  <div className="progress-ring">
+                    <span>78%</span>
+                  </div>
+                </div>
+
+                <div className="progress-legend">
+                  <p>
+                    <i className="excellent" />
+                    Excellent <b>45%</b>
+                  </p>
+                  <p>
+                    <i className="track" />
+                    On Track <b>33%</b>
+                  </p>
+                  <p>
+                    <i className="attention" />
+                    Needs Attention <b>22%</b>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="achievement-card">
+              <div className="trophy">🏆</div>
+              <strong>Achievement Unlocked!</strong>
+              <b>Top Performer</b>
+              <span>+50 points</span>
+            </div>
           </div>
         </div>
+
+        <div className="hero-wave" />
       </section>
 
-      <section className="trust-row">
-        <span>Designed for institutes that want to move forward</span>
+      <section className="audience-section">
+        <div className="audience-grid">
+          {audienceCards.map((card) => (
+            <article className="audience-card" key={card.title}>
+              <div className="audience-icon">{card.icon}</div>
+              <h2>{card.title}</h2>
+              <p>{card.text}</p>
+              <a href="#">{`Learn more  →`}</a>
+            </article>
+          ))}
+        </div>
 
-        <div>
-          <b>Teach</b>
-          <b>Learn</b>
-          <b>Connect</b>
-          <b>Grow</b>
+        <div className="metrics">
+          <div>
+            <strong>★</strong>
+            <span>
+              <b>4.8/5</b>
+              Customer Satisfaction
+            </span>
+          </div>
+
+          <div>
+            <strong>●●●</strong>
+            <span>
+              <b>2M+</b>
+              Students Empowered
+            </span>
+          </div>
+
+          <div>
+            <strong>🏆</strong>
+            <span>
+              <b>500+</b>
+              Institutes Trust ClassRise
+            </span>
+          </div>
         </div>
       </section>
     </main>
