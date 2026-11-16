@@ -1,1 +1,256 @@
-*{box-sizing:border-box}body{margin:0;background:#f5f7fb;color:#14213d;font-family:Arial,sans-serif}main{max-width:760px;margin:12vh auto;padding:32px}.eyebrow{font-size:12px;letter-spacing:.16em;color:#536dfe;font-weight:700}h1{font-size:clamp(40px,7vw,72px);line-height:1.02;margin:16px 0}.lede{font-size:20px;color:#526074}.card{display:flex;flex-direction:column;gap:8px;margin-top:48px;padding:24px;border-radius:16px;background:white;box-shadow:0 10px 30px #14213d12}.card span{color:#526074}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #071d24;
+  color: #e8ffff;
+  font-family: Arial, sans-serif;
+}
+
+.site-shell {
+  min-height: 100vh;
+  max-width: 1240px;
+  margin: auto;
+  padding: 24px 5vw;
+  background: radial-gradient(
+    circle at 76% 48%,
+    #0d4146 0,
+    #071d24 38%
+  );
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.brand {
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: -0.05em;
+}
+
+.brand-mark {
+  display: inline-grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  margin-right: 7px;
+  border-radius: 9px;
+  background: #9de4d6;
+  color: #07252a;
+  font-size: 15px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  color: #9fc3c9;
+  font-size: 14px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7vw;
+  align-items: center;
+  min-height: 650px;
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: #9de4d6;
+  font-weight: 700;
+}
+
+.hero h1 {
+  max-width: 650px;
+  margin: 22px 0;
+  font-size: clamp(48px, 7vw, 88px);
+  line-height: 0.96;
+  letter-spacing: -0.07em;
+}
+
+.lede {
+  max-width: 520px;
+  color: #a9c2c7;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.primary-button {
+  margin-top: 26px;
+  border: 0;
+  border-radius: 9px;
+  padding: 15px 19px;
+  background: #9de4d6;
+  color: #07252a;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.primary-button span {
+  margin-left: 14px;
+}
+
+.fine-print {
+  margin-top: 18px;
+  color: #71949a;
+  font-size: 12px;
+}
+
+.hero-visual {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 430px;
+}
+
+.glow {
+  position: absolute;
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  background: #1da18d;
+  filter: blur(80px);
+  opacity: 0.23;
+}
+
+.progress-card {
+  position: relative;
+  width: min(360px, 90%);
+  padding: 27px;
+  border: 1px solid #35727a;
+  border-radius: 22px;
+  background: #0b3038;
+  box-shadow: 0 25px 70px #0005;
+  transform: rotate(-4deg);
+}
+
+.card-top,
+.progress-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #9fc3c9;
+  font-size: 12px;
+}
+
+.live-dot {
+  color: #9de4d6;
+}
+
+.progress-number {
+  margin-top: 28px;
+  font-size: 86px;
+  font-weight: 800;
+  letter-spacing: -0.08em;
+}
+
+.progress-number span {
+  color: #9de4d6;
+  font-size: 32px;
+}
+
+.progress-label {
+  color: #9fc3c9;
+  font-size: 14px;
+}
+
+.progress-line {
+  height: 8px;
+  margin: 28px 0 12px;
+  border-radius: 8px;
+  background: #173f47;
+  overflow: hidden;
+}
+
+.progress-line i {
+  display: block;
+  width: 82%;
+  height: 100%;
+  border-radius: inherit;
+  background: #9de4d6;
+}
+
+.mini-card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 18px;
+  border-radius: 14px;
+  background: #f0fffb;
+  color: #07252a;
+  box-shadow: 0 18px 40px #0004;
+}
+
+.mini-card b {
+  font-size: 27px;
+}
+
+.mini-card span {
+  color: #387078;
+  font-size: 11px;
+}
+
+.students {
+  bottom: 14%;
+  left: 3%;
+  transform: rotate(4deg);
+}
+
+.teachers {
+  top: 18%;
+  right: 2%;
+  transform: rotate(5deg);
+}
+
+.trust-row {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 22px;
+  border-top: 1px solid #1b454c;
+  color: #71949a;
+  font-size: 12px;
+}
+
+.trust-row div {
+  display: flex;
+  gap: 34px;
+  color: #9fc3c9;
+}
+
+@media (max-width: 760px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 80px 0;
+  }
+
+  .hero-visual {
+    height: 360px;
+  }
+
+  .trust-row {
+    display: block;
+  }
+
+  .trust-row div {
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 18px;
+  }
+
+  .hero h1 {
+    font-size: 58px;
+  }
+}
