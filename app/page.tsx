@@ -1,181 +1,45 @@
-const audienceCards = [
-  {
-    icon: "▣",
-    title: "For Institutes",
-    text: "Manage admissions, classes and performance with ease.",
-  },
-  {
-    icon: "▤",
-    title: "For Teachers",
-    text: "Plan, teach and track progress effortlessly.",
-  },
-  {
-    icon: "◆",
-    title: "For Students",
-    text: "Learn at your own pace and reach new heights.",
-  },
-  {
-    icon: "●",
-    title: "For Parents",
-    text: "Stay informed, support learning and celebrate growth.",
-  },
-];
-
 export default function Home() {
   return (
-    <main>
-      <section className="hero-section">
-        <nav className="nav">
-          <div className="brand">
-            <img className="approved-logo" src="/assets/gurukulos-logo.png" alt="GurukulOS — Connected Learning, Infinite Growth" />
-          </div>
-
-          <div className="nav-links">
-            <span>For institutes⌄</span>
-            <span>For teachers⌄</span>
-            <span>For students⌄</span>
-            <button className="sign-in">Sign in</button>
-          </div>
-        </nav>
-
-        <div className="hero-content">
-          <div className="hero-copy">
-            <p className="eyebrow">THE MODERN LEARNING PLATFORM</p>
-
-            <h1>
-              Make progress
-              <strong> impossible to miss.</strong>
-            </h1>
-
-            <p className="hero-description">
-              Track. Support. Achieve. — All in one powerful education platform
-              for institutes, teachers, students and parents.
-            </p>
-
-            <div className="hero-actions">
-              <button className="primary-button">
-                Explore GurukulOS <span>→</span>
-              </button>
-
-              <button className="demo-button">
-                <span className="play-icon">▶</span>
-                Watch demo
-              </button>
-            </div>
-          </div>
-
-          <div className="dashboard-area">
-            <div className="dashboard-glow" />
-
-            <div className="dashboard">
-              <div className="dashboard-header">
-                <div className="dashboard-brand">
-                  <img className="dashboard-approved-logo" src="/assets/gurukulos-logo.png" alt="GurukulOS" />
-                </div>
-
-                <span className="date-filter">Last 30 Days⌄</span>
-              </div>
-
-              <div className="dashboard-top">
-                <div className="student-stat">
-                  <div className="stat-icon">●●</div>
-                  <strong>95</strong>
-                  <span>Students</span>
-                  <small>↑ 12% <em>vs. prior period</em></small>
-                </div>
-
-                <div className="line-chart">
-                  <span className="chart-value">92%</span>
-                  <div className="chart-line">
-                    <i />
-                    <i />
-                    <i />
-                    <i />
-                    <i />
-                    <i />
-                    <i />
-                  </div>
-                </div>
-              </div>
-
-              <div className="learning-progress">
-                <div>
-                  <h3>Learning Progress</h3>
-
-                  <div className="progress-ring">
-                    <span>78%</span>
-                  </div>
-                </div>
-
-                <div className="progress-legend">
-                  <p>
-                    <i className="excellent" />
-                    Excellent <b>45%</b>
-                  </p>
-                  <p>
-                    <i className="track" />
-                    On Track <b>33%</b>
-                  </p>
-                  <p>
-                    <i className="attention" />
-                    Needs Attention <b>22%</b>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="achievement-card">
-              <div className="trophy">🏆</div>
-              <strong>Achievement Unlocked!</strong>
-              <b>Top Performer</b>
-              <span>+50 points</span>
-            </div>
-          </div>
+    <main className="site-shell">
+      <nav className="top-nav">
+        <a className="logo-link" href="#" aria-label="GurukulOS home">
+          <img src="/assets/gurukulos-logo.png" alt="GurukulOS — Connected Learning, Infinite Growth" />
+        </a>
+        <div className="nav-menu">
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#resources">Resources</a>
+          <a href="#login">Log In</a>
+          <a className="demo-link" href="#demo">Request a Demo</a>
         </div>
+      </nav>
 
-        <div className="hero-wave" />
-      </section>
-
-      <section className="audience-section">
-        <div className="audience-grid">
-          {audienceCards.map((card) => (
-            <article className="audience-card" key={card.title}>
-              <div className="audience-icon">{card.icon}</div>
-              <h2>{card.title}</h2>
-              <p>{card.text}</p>
-              <a href="#">{`Learn more  →`}</a>
-            </article>
-          ))}
+      <section className="reference-hero">
+        <div className="hero-copy">
+          <h1>One Platform.<br />Complete Class<br />Management.</h1>
+          <p>The comprehensive solution for coaching institutes and tuition centers to streamline administration and boost growth.</p>
+          <a className="green-button" href="#get-started">Get Started Free</a>
         </div>
-
-        <div className="metrics">
-          <div>
-            <strong>★</strong>
-            <span>
-              <b>4.8/5</b>
-              Customer Satisfaction
-            </span>
-          </div>
-
-          <div>
-            <strong>●●●</strong>
-            <span>
-              <b>2M+</b>
-              Students Empowered
-            </span>
-          </div>
-
-          <div>
-            <strong>🏆</strong>
-            <span>
-              <b>500+</b>
-              Institutes Trust GurukulOS
-            </span>
+        <div className="dashboard-stage" aria-label="GurukulOS institute performance dashboard preview">
+          <div className="dashboard-window">
+            <aside className="dashboard-sidebar">
+              <img src="/assets/gurukulos-logo.png" alt="" />
+              <span className="side-item active">▦</span><span className="side-item">⌘</span><span className="side-item">♙</span><span className="side-item">□</span><span className="side-item">♡</span><span className="side-item">⚙</span>
+              <span className="side-bottom">↪</span>
+            </aside>
+            <div className="dashboard-main">
+              <div className="dashboard-userbar"><span>Institute Owner</span><span>◉ &nbsp;♧ &nbsp;👤</span></div>
+              <div className="dashboard-titlebar"><div><h2>Institute Performance Overview</h2><p>Clearer-based analytics amours in institute dashboard.</p></div><button>▤ &nbsp;Analots dashboard⌄</button></div>
+              <div className="dashboard-cards">
+                <article className="stat-card"><span className="card-label"><b>1</b> Active Students</span><strong>1,493</strong><div className="mini-line"><i/><i/><i/><i/><i/><i/><i/></div><small>Spark lime<br/><b>13</b></small></article>
+                <article className="stat-card"><span className="card-label"><b>2</b> Fee Collections</span><strong>₹14,050.00</strong><div className="bar-chart"><i/><i/><i/><i/><i/><i/></div><small>Progress person<br/><em>━━━━━━</em></small></article>
+                <article className="stat-card"><span className="card-label"><b>3</b> Avg. Attendance</span><strong>42.7%</strong><div className="donut"/><small>● Attendance<br/><b>23%</b></small></article>
+              </div>
+              <div className="students-table"><div><b>Student Students</b><span>Search&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; All Active⌄</span></div><small>Student Name　　　　　　　　 Last Name　　　　　　　　 Standards</small></div>
+            </div>
           </div>
         </div>
       </section>
     </main>
   );
 }
-
-
