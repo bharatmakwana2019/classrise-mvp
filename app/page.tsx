@@ -16,7 +16,7 @@ export default function Home() {
 
       <section className="reference-hero">
         <div className="hero-copy">
-          <h1>Run Your Institute<br />With Less Effort.<br />Grow With Confidence.</h1>
+          <h1>Run Your Business<br />Smarter.</h1>
           <p>Whether you are starting fresh or moving from another system, bring every branch, team, student, and parent into one clear, institute-branded experience.</p>
           <a className="green-button" href="#get-started">Plan Your Setup</a>
         </div>
@@ -43,6 +43,7 @@ export default function Home() {
     </main>
   );
 }
+
 
 
 
