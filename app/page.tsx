@@ -39,10 +39,21 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      <section className="feature-rail" aria-label="GurukulOS capabilities">
+        <div className="feature-rail-heading"><span>Everything your institute needs to grow</span><small>One connected platform for every branch, team, student, and parent.</small></div>
+        <div className="feature-marquee">
+          <div className="feature-track">
+            {[['fees-follow-ups.png','Fees & Follow-Ups'],['attendance-tracking.png','Attendance Tracking'],['staff-management.png','Staff Management'],['students-parents-portal.png','Students & Parents Portal'],['multi-branch-reports.png','Multi-Branch Reports'],['video-lectures.png','Video Lectures & Premium Content'],['payroll-calculations.png','Payroll Calculations'],['auto-timetable-setup.png','Auto Time-Table Setup'],['revision-courses.png','Revision Courses'],['enquiries-to-admission.png','Enquiries to Admission'],['student-performance-feedback.png','Student Performance & Feedback'],['tests-exams-results.png','Tests, Exams & Results']].map(([image,label]) => <div className="feature-image-card" key={label}><img src={`/assets/features/${image}`} alt=""/><span>{label}</span></div>)}
+            {[['fees-follow-ups.png','Fees & Follow-Ups'],['attendance-tracking.png','Attendance Tracking'],['staff-management.png','Staff Management'],['students-parents-portal.png','Students & Parents Portal'],['multi-branch-reports.png','Multi-Branch Reports'],['video-lectures.png','Video Lectures & Premium Content'],['payroll-calculations.png','Payroll Calculations'],['auto-timetable-setup.png','Auto Time-Table Setup'],['revision-courses.png','Revision Courses'],['enquiries-to-admission.png','Enquiries to Admission'],['student-performance-feedback.png','Student Performance & Feedback'],['tests-exams-results.png','Tests, Exams & Results']].map(([image,label]) => <div className="feature-image-card" key={`copy-${label}`}><img src={`/assets/features/${image}`} alt=""/><span>{label}</span></div>)}
+          </div>
+        </div>
+      </section>      </section>
     </main>
   );
 }
+
+
+
 
 
 
