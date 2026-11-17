@@ -3,7 +3,7 @@ export default function Home() {
     <main className="site-shell">
       <nav className="top-nav">
         <a className="logo-link" href="#" aria-label="gurukulOS home">
-          <img src="/assets/gurukulos-logo.png" alt="gurukulOS — Connected Learning, Infinite Growth" />
+          <img src="/assets/gurukulos-logo-v2.png" alt="gurukulOS — Connected Learning, Infinite Growth" />
         </a>
         <div className="nav-menu">
           <a href="#features">Features</a>
@@ -23,7 +23,7 @@ export default function Home() {
         <div className="dashboard-stage" aria-label="gurukulOS institute performance dashboard preview">
           <div className="dashboard-window">
             <aside className="dashboard-sidebar">
-              <img src="/assets/gurukulos-logo.png" alt="" />
+              <img src="/assets/gurukulos-logo-v2.png" alt="" />
               <span className="side-item active">▦</span><span className="side-item">⌘</span><span className="side-item">♙</span><span className="side-item">□</span><span className="side-item">♡</span><span className="side-item">⚙</span>
               <span className="side-bottom">↪</span>
             </aside>
