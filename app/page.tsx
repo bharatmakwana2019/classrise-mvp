@@ -27,10 +27,7 @@ export default function Home() {
       <section className="hero-section">
         <nav className="nav">
           <div className="brand">
-            <span className="brand-icon">↗</span>
-            <span>
-              Class<span>Rise</span>
-            </span>
+            <img className="approved-logo" src="/assets/gurukulos-logo.png" alt="GurukulOS — Connected Learning, Infinite Growth" />
           </div>
 
           <div className="nav-links">
@@ -57,7 +54,7 @@ export default function Home() {
 
             <div className="hero-actions">
               <button className="primary-button">
-                Explore ClassRise <span>→</span>
+                Explore GurukulOS <span>→</span>
               </button>
 
               <button className="demo-button">
@@ -73,8 +70,7 @@ export default function Home() {
             <div className="dashboard">
               <div className="dashboard-header">
                 <div className="dashboard-brand">
-                  <span className="small-brand-icon">↗</span>
-                  ClassRise
+                  <img className="dashboard-approved-logo" src="/assets/gurukulos-logo.png" alt="GurukulOS" />
                 </div>
 
                 <span className="date-filter">Last 30 Days⌄</span>
@@ -173,7 +169,7 @@ export default function Home() {
             <strong>🏆</strong>
             <span>
               <b>500+</b>
-              Institutes Trust ClassRise
+              Institutes Trust GurukulOS
             </span>
           </div>
         </div>
@@ -181,3 +177,5 @@ export default function Home() {
     </main>
   );
 }
+
+

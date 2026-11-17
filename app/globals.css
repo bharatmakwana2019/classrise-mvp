@@ -631,3 +631,7 @@ button {
     padding-left: 0;
   }
 }
+.approved-logo{display:block;width:min(114px,18vw);height:70px;object-fit:contain}
+.dashboard-approved-logo{display:block;width:86px;height:54px;object-fit:contain}
+
+
