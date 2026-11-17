@@ -17,7 +17,7 @@ export default function Home() {
       <section className="reference-hero">
         <div className="hero-copy">
           <h1>Run Your Business<br />Smarter.</h1>
-          <p>Whether you are starting fresh or moving from another system, bring every branch, team, student, and parent into one clear, institute-branded experience.</p>
+          <p>Whether you are starting fresh or moving from another system, bring your daily operations, people, and decisions into one clear, institute-branded experience.</p>
           <a className="green-button" href="#get-started">Plan Your Setup</a>
         </div>
         <div className="dashboard-stage" aria-label="GurukulOS institute performance dashboard preview">
@@ -41,7 +41,7 @@ export default function Home() {
         </div>
       </section>
       <section className="feature-rail" aria-label="GurukulOS capabilities">
-        <div className="feature-rail-heading"><span>Everything your institutes need to grow, now in one place</span><small>One connected platform for every branch, team, student, and parent.</small></div>
+        <div className="feature-rail-heading"><span>Everything your institutes need to grow, now in one place</span><small>One connected platform to simplify operations, strengthen engagement, and support confident growth.</small></div>
         <div className="feature-marquee">
           <div className="feature-track">
             {[['fees-follow-ups.png','Fees & Follow-Ups'],['attendance-tracking.png','Attendance Tracking'],['staff-management.png','Staff Management'],['students-parents-portal.png','Students & Parents Portal'],['multi-branch-reports.png','Multi-Branch Reports'],['video-lectures.png','Video Lectures & Premium Content'],['payroll-calculations.png','Payroll Calculations'],['auto-timetable-setup.png','Auto Time-Table Setup'],['revision-courses.png','Revision Courses'],['enquiries-to-admission.png','Enquiries to Admission'],['student-performance-feedback.png','Student Performance & Feedback'],['tests-exams-results.png','Tests, Exams & Results']].map(([image,label]) => <div className="feature-image-card" key={label}><img src={`/assets/features/${image}`} alt=""/><span>{label}</span></div>)}
