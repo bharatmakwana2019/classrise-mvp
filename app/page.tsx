@@ -48,6 +48,17 @@ export default function Home() {
             {[['fees-follow-ups.png','Fees & Follow-Ups'],['attendance-tracking.png','Attendance Tracking'],['staff-management.png','Staff Management'],['students-parents-portal.png','Students & Parents Portal'],['multi-branch-reports.png','Multi-Branch Reports'],['video-lectures.png','Video Lectures & Premium Content'],['payroll-calculations.png','Payroll Calculations'],['auto-timetable-setup.png','Auto Time-Table Setup'],['revision-courses.png','Revision Courses'],['enquiries-to-admission.png','Enquiries to Admission'],['student-performance-feedback.png','Student Performance & Feedback'],['tests-exams-results.png','Tests, Exams & Results']].map(([image,label]) => <div className="feature-image-card" key={`copy-${label}`}><img src={`/assets/features/${image}`} alt=""/><span>{label}</span></div>)}
           </div>
         </div>
+      </section>      <section className="how-it-works" aria-label="How GurukulOS works">
+        <div className="section-heading"><span className="eyebrow">HOW GURUKULOS WORKS</span><h2>From scattered work to confident growth.</h2><p>Bring your institute onto one connected operating layer in three simple steps.</p></div>
+        <div className="steps-grid">
+          <article><span>01</span><h3>Set up your institute</h3><p>Add branches, batches, staff, students, fee plans, and workflows through a guided setup.</p></article>
+          <article><span>02</span><h3>Connect daily operations</h3><p>Manage admissions, fees, attendance, communication, content, exams, payroll, and reporting in one place.</p></article>
+          <article><span>03</span><h3>Act on what matters</h3><p>See branch performance, pending follow-ups, student progress, and decisions that need attention.</p></article>
+        </div>
+      </section>
+      <section className="branch-advantage" aria-label="Multi-branch advantage">
+        <div className="branch-copy"><span className="eyebrow">BUILT FOR MULTI-BRANCH INSTITUTES</span><h2>One institute. Every branch. One clear view.</h2><p>Give every branch the freedom to operate and give leadership the visibility to guide the whole institute.</p><ul><li>Compare performance across branches</li><li>Standardize processes while preserving local control</li><li>Track admissions, fees, attendance, and results centrally</li><li>Know which branch or batch needs attention</li></ul></div>
+        <div className="branch-preview"><div className="branch-preview-top"><b>All Branches</b><span>Overview⌄</span></div><div className="branch-bars"><div><span>North Branch</span><i style={{width:'82%'}}></i><b>82%</b></div><div><span>Central Branch</span><i style={{width:'68%'}}></i><b>68%</b></div><div><span>South Branch</span><i style={{width:'91%'}}></i><b>91%</b></div></div><small>Branch performance at a glance</small></div>
       </section>      <section className="trust-proof" aria-label="Why institutes choose GurukulOS">
         <div className="trust-proof-intro"><span className="eyebrow">SAMPLE TRUST PROOF · PREVIEW ONLY</span><h2>The operating advantage growing institutes can feel every day.</h2><p>Replace these sample proof points with verified customer results, testimonials, and institute logos before launch.</p></div>
         <div className="trust-proof-grid">
@@ -56,6 +67,6 @@ export default function Home() {
           <article><h3>“A calmer way to run every branch.”</h3><p>Replace this placeholder with a verified customer testimonial before launch.</p></article>
         </div>
       </section>
-    </main>
+      <section className="final-cta" aria-label="Book a GurukulOS demo"><span className="eyebrow">READY FOR A CLEARER WAY TO OPERATE?</span><h2>See what GurukulOS can change for your institute.</h2><p>Get a practical walkthrough built around your branches, teams, and daily workflows.</p><a className="green-button" href="#demo">Book a GurukulOS Demo</a><a className="text-link" href="#platform">Explore the Platform</a></section>`r`n    </main>
   );
 }
