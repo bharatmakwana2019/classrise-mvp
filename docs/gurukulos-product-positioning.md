@@ -1,10 +1,10 @@
-# GurukulOS Product Positioning and Competitive Design Principles
+# gurukulOS Product Positioning and Competitive Design Principles
 
-This document is the standing product-design brief for GurukulOS. Use it when making homepage, product, pricing, onboarding, dashboard, or marketing decisions.
+This document is the standing product-design brief for gurukulOS. Use it when making homepage, product, pricing, onboarding, dashboard, or marketing decisions.
 
 ## Strategic position
 
-GurukulOS should be positioned as the connected operating system for coaching institutes: one clear view of admissions, fees, attendance, teaching, parent communication, and student growth.
+gurukulOS should be positioned as the connected operating system for coaching institutes: one clear view of admissions, fees, attendance, teaching, parent communication, and student growth.
 
 The core promise is:
 
@@ -16,7 +16,7 @@ We should aim to be lower total cost and materially better in usability, onboard
 
 Classpro publicly presents broad operational coverage: fee management, online payments, biometric attendance, homework, assignments, student performance, reports, parent/student app, notifications, enquiries, lead management, multi-branch support, and a seven-day full-feature trial.
 
-GurukulOS should not compete through feature-count parity alone. Classpro’s public positioning is broad and credible, but it leaves important buyer questions under-explained:
+gurukulOS should not compete through feature-count parity alone. Classpro’s public positioning is broad and credible, but it leaves important buyer questions under-explained:
 
 - The business outcome is less clear than the feature list.
 - User workflows for owners, teachers, counsellors, accountants, parents, and students are not demonstrated deeply.
@@ -31,7 +31,7 @@ GurukulOS should not compete through feature-count parity alone. Classpro’s pu
 
 These are public-site observations, not proof that Classpro lacks the underlying capabilities. Validate product-level claims through demos, trials, reviews, and customer interviews before using them in competitive marketing.
 
-## GurukulOS differentiation pillars
+## gurukulOS differentiation pillars
 
 ### 1. Outcome-led product story
 
@@ -98,7 +98,7 @@ Before approving a feature or design, ask:
 2. What measurable outcome should improve?
 3. Is the next action obvious?
 4. Does it reduce effort or uncertainty?
-5. Does it help GurukulOS outperform a feature-led competitor through clarity, speed, trust, or results?
+5. Does it help gurukulOS outperform a feature-led competitor through clarity, speed, trust, or results?
 6. Can we prove the claim?
 
 ## Non-negotiable positioning principle
