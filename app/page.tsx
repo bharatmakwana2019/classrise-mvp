@@ -1,5 +1,6 @@
 export default function Home() {
   return (
+    <>
     <main className="site-shell">
       <nav className="top-nav">
         <a className="logo-link" href="#" aria-label="gurukulOS home">
@@ -67,6 +68,19 @@ export default function Home() {
           <article><h3>“A calmer way to run every branch.”</h3><p>Replace this placeholder with a verified customer testimonial before launch.</p></article>
         </div>
       </section>
-      <section className="final-cta" aria-label="Book a gurukulOS demo"><span className="eyebrow">READY FOR A CLEARER WAY TO OPERATE?</span><h2>See what gurukulOS can change for your institute.</h2><p>Get a practical walkthrough built around your branches, teams, and daily workflows.</p><a className="green-button" href="#demo">Book a gurukulOS Demo</a><a className="text-link" href="#platform">Explore the Platform</a></section>`r`n    </main>
+      <section className="final-cta" aria-label="Book a gurukulOS demo"><span className="eyebrow">READY FOR A CLEARER WAY TO OPERATE?</span><h2>See what gurukulOS can change for your institute.</h2><p>Get a practical walkthrough built around your branches, teams, and daily workflows.</p><a className="green-button" href="#demo">Book a gurukulOS Demo</a><a className="text-link" href="#platform">Explore the Platform</a></section>
+    </main>
+      <footer className="site-footer">
+        <div className="footer-main">
+          <div className="footer-brand"><img src="/assets/gurukulos-logo-v2.png" alt="gurukulOS — Connected Learning, Infinite Growth" /><p>The connected operating system for growing coaching institutes.</p></div>
+          <div className="footer-column"><h3>Platform</h3><a href="#features">Features</a><a href="#how-it-works">How gurukulOS Works</a><a href="#branches">Multi-Branch Management</a><a href="#reports">Reports & Insights</a></div>
+          <div className="footer-column"><h3>For Institutes</h3><a href="#owners">Institute Owners</a><a href="#teams">Branch Managers & Teams</a><a href="#students">Students & Parents</a><a href="#demo">Plan Your Setup</a></div>
+          <div className="footer-column"><h3>Resources</h3><a href="#resources">Product Guide</a><a href="#faqs">FAQs</a><a href="#support">Contact Support</a><a href="#demo">Request a Demo</a></div>
+          <div className="footer-column"><h3>Company</h3><a href="#about">About gurukulOS</a><a href="#contact">Contact</a><a href="#partners">Partner With Us</a><a href="#security">Data Security</a></div>
+        </div>
+        <div className="footer-cta"><div><span className="eyebrow">READY FOR A CLEARER WAY TO OPERATE?</span><h2>Run your institute with more clarity.</h2></div><a className="footer-button" href="#demo">Book a gurukulOS Demo</a></div>
+        <div className="footer-bottom"><span>© 2026 gurukulOS. All rights reserved.</span><span>Made for growing coaching institutes.</span><div><a href="#privacy">Privacy</a><a href="#terms">Terms</a><a href="#cookies">Cookies</a></div></div>
+      </footer>
+    </>
   );
 }
