@@ -48,16 +48,14 @@ export default function Home() {
             {[['fees-follow-ups.png','Fees & Follow-Ups'],['attendance-tracking.png','Attendance Tracking'],['staff-management.png','Staff Management'],['students-parents-portal.png','Students & Parents Portal'],['multi-branch-reports.png','Multi-Branch Reports'],['video-lectures.png','Video Lectures & Premium Content'],['payroll-calculations.png','Payroll Calculations'],['auto-timetable-setup.png','Auto Time-Table Setup'],['revision-courses.png','Revision Courses'],['enquiries-to-admission.png','Enquiries to Admission'],['student-performance-feedback.png','Student Performance & Feedback'],['tests-exams-results.png','Tests, Exams & Results']].map(([image,label]) => <div className="feature-image-card" key={`copy-${label}`}><img src={`/assets/features/${image}`} alt=""/><span>{label}</span></div>)}
           </div>
         </div>
+      </section>      <section className="trust-proof" aria-label="Why institutes choose GurukulOS">
+        <div className="trust-proof-intro"><span className="eyebrow">BUILT FOR INSTITUTE GROWTH</span><h2>More control for your team. More confidence for every decision.</h2><p>GurukulOS connects the work behind your institute so you can spend less time chasing updates and more time helping it grow.</p></div>
+        <div className="trust-proof-grid">
+          <article><b>01</b><h3>One view across branches</h3><p>See performance, attendance, collections, and priorities without switching between disconnected systems.</p></article>
+          <article><b>02</b><h3>Made to feel like your institute</h3><p>Give your team, students, and parents a clear experience shaped around your brand and operating style.</p></article>
+          <article><b>03</b><h3>Confidence built into every workflow</h3><p>Turn routine follow-ups and scattered information into visible actions your team can actually complete.</p></article>
+        </div>
       </section>
     </main>
   );
 }
-
-
-
-
-
-
-
-
-
