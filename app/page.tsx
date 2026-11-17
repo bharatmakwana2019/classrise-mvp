@@ -51,9 +51,9 @@ export default function Home() {
       </section>      <section className="trust-proof" aria-label="Why institutes choose GurukulOS">
         <div className="trust-proof-intro"><span className="eyebrow">SAMPLE TRUST PROOF · PREVIEW ONLY</span><h2>The operating advantage growing institutes can feel every day.</h2><p>Replace these sample proof points with verified customer results, testimonials, and institute logos before launch.</p></div>
         <div className="trust-proof-grid">
-          <article><b>40+</b><h3>Institute teams</h3><p>Sample metric showing how many growing institutes use the platform.</p></article>
-          <article><b>12k+</b><h3>Learner records organized</h3><p>Sample metric showing the scale of connected student and parent operations.</p></article>
-          <article><b>“A calmer way to run every branch.”</b><h3>Sample customer quote</h3><p>Replace this placeholder with a verified customer testimonial before launch.</p></article>
+          <article><h3>40+ Institute teams</h3><p>Sample metric showing how many growing institutes use the platform.</p></article>
+          <article><h3>12k+ Learner records organized</h3><p>Sample metric showing the scale of connected student and parent operations.</p></article>
+          <article><h3>“A calmer way to run every branch.”</h3><p>Replace this placeholder with a verified customer testimonial before launch.</p></article>
         </div>
       </section>
     </main>
