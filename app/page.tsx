@@ -19,7 +19,7 @@ export default function Home() {
         <div className="hero-copy">
           <h1>Run Your Business<br />Smarter.</h1>
           <p>Whether you are starting fresh or moving from another system, bring your daily operations, people, and decisions into one clear, institute-branded experience.</p>
-          <a className="green-button" href="#get-started">Plan Your Setup</a>
+          <a className="green-button" href="/onboarding">Plan Your Setup</a>
         </div>
         <div className="dashboard-stage" aria-label="gurukulOS institute performance dashboard preview">
           <div className="dashboard-window">
@@ -68,7 +68,7 @@ export default function Home() {
           <article><h3>“A calmer way to run every branch.”</h3><p>Replace this placeholder with a verified customer testimonial before launch.</p></article>
         </div>
       </section>
-      <section className="final-cta" aria-label="Book a gurukulOS demo"><span className="eyebrow">READY FOR A CLEARER WAY TO OPERATE?</span><h2>See what gurukulOS can change for your institute.</h2><p>Get a practical walkthrough built around your branches, teams, and daily workflows.</p><a className="green-button" href="#demo">Book a gurukulOS Demo</a><a className="text-link" href="#platform">Explore the Platform</a></section>
+      <section className="final-cta" aria-label="Book a gurukulOS demo"><span className="eyebrow">READY FOR A CLEARER WAY TO OPERATE?</span><h2>See what gurukulOS can change for your institute.</h2><p>Get a practical walkthrough built around your branches, teams, and daily workflows.</p><a className="green-button" href="/onboarding">Book a gurukulOS Demo</a><a className="text-link" href="#platform">Explore the Platform</a></section>
     </main>
       <footer className="site-footer">
         <div className="footer-main">
@@ -78,7 +78,7 @@ export default function Home() {
           <div className="footer-column"><h3>Resources</h3><a href="#resources">Product Guide</a><a href="#faqs">FAQs</a><a href="#support">Contact Support</a><a href="#demo">Request a Demo</a></div>
           <div className="footer-column"><h3>Company</h3><a href="#about">About gurukulOS</a><a href="#contact">Contact</a><a href="#partners">Partner With Us</a><a href="#security">Data Security</a></div>
         </div>
-        <div className="footer-cta"><div><span className="eyebrow">READY FOR A CLEARER WAY TO OPERATE?</span><h2>Run your institute with more clarity.</h2></div><a className="footer-button" href="#demo">Book a gurukulOS Demo</a></div>
+        <div className="footer-cta"><div><span className="eyebrow">READY FOR A CLEARER WAY TO OPERATE?</span><h2>Run your institute with more clarity.</h2></div><a className="footer-button" href="/onboarding">Book a gurukulOS Demo</a></div>
         <div className="footer-bottom"><span>© 2026 gurukulOS. All rights reserved.</span><span>Made for growing coaching institutes.</span><div><a href="#privacy">Privacy</a><a href="#terms">Terms</a><a href="#cookies">Cookies</a></div></div>
       </footer>
     </>
