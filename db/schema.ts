@@ -1,4 +1,4 @@
-import { boolean, integer, pgEnum, pgTable, text, timestamp, uuid } from "drizzle-orm/pg-core";
+import { boolean, integer, jsonb, pgEnum, pgTable, text, timestamp, uuid } from "drizzle-orm/pg-core";
 
 export const userRole = pgEnum("user_role", ["owner", "staff", "teacher", "parent", "student"]);
 export const moduleKey = pgEnum("module_key", ["students", "attendance", "fees", "timetable", "tests_results", "content", "reports", "communications"]);
@@ -27,6 +27,7 @@ export const users = pgTable("users", {
   instituteId: uuid("institute_id").notNull().references(() => institutes.id, { onDelete: "cascade" }),
   email: text("email").notNull(),
   name: text("name").notNull(),
+  passwordHash: text("password_hash"),
   role: userRole("role").notNull(),
   isActive: boolean("is_active").notNull().default(true),
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
@@ -68,4 +69,29 @@ export const teachers = pgTable("teachers", {
   instituteId: uuid("institute_id").notNull().references(() => institutes.id, { onDelete: "cascade" }),
   userId: uuid("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
   subject: text("subject"),
+});
+
+export const razorpayWebhookEvents = pgTable("razorpay_webhook_events", {
+  id: uuid("id").defaultRandom().primaryKey(),
+  eventId: text("event_id").notNull().unique(),
+  event: text("event").notNull(),
+  payload: jsonb("payload").notNull(),
+  receivedAt: timestamp("received_at", { withTimezone: true }).notNull().defaultNow(),
+});
+
+export const onboardingPayments = pgTable("onboarding_payments", {
+  id: uuid("id").defaultRandom().primaryKey(),
+  instituteName: text("institute_name").notNull(),
+  subdomain: text("subdomain").notNull(),
+  ownerName: text("owner_name").notNull(),
+  ownerEmail: text("owner_email").notNull(),
+  passwordHash: text("password_hash"),
+  modules: jsonb("modules").$type<string[]>().notNull(),
+  amount: integer("amount").notNull(),
+  currency: text("currency").notNull().default("INR"),
+  orderId: text("order_id").unique(),
+  paymentId: text("payment_id").unique(),
+  status: text("status").notNull().default("pending"),
+  instituteId: uuid("institute_id").references(() => institutes.id, { onDelete: "set null" }),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
 });

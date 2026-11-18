@@ -1,4 +1,11 @@
-export default function Home() {
+import { headers } from "next/headers";
+import { TenantLogin } from "./tenant-login";
+import { tenantFromHost } from "../lib/tenant-host";
+
+export default async function Home() {
+  const requestHeaders = await headers();
+  const tenant = tenantFromHost(requestHeaders.get("host"));
+  if (tenant) return <TenantLogin subdomain={tenant} />;
   return (
     <>
     <main className="site-shell">
@@ -10,7 +17,7 @@ export default function Home() {
           <a href="#features">Features</a>
           <a href="#pricing">Pricing</a>
           <a href="#resources">Resources</a>
-          <a href="#login">Log In</a>
+          <a href="/login">Log In</a>
           <a className="demo-link" href="#demo">Request a Demo</a>
         </div>
       </nav>
