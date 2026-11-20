@@ -29,6 +29,13 @@
       "when": 1794990805056,
       "tag": "0003_auth_credentials",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1795158178863,
+      "tag": "0004_breezy_forge",
+      "breakpoints": true
     }
   ]
 }

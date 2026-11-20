@@ -1,7 +1,7 @@
 import { eq } from "drizzle-orm";
 import { NextResponse } from "next/server";
 import { db } from "../../../db";
-import { institutes, onboardingPayments } from "../../../db/schema";
+import { emailVerifications, institutes, onboardingPayments } from "../../../db/schema";
 import { hashPassword } from "../../../lib/password";
 
 export const runtime = "nodejs";
@@ -32,6 +32,8 @@ export async function POST(request: Request) {
   if (["www", "app", "api", "admin", "mail"].includes(subdomain)) return NextResponse.json({ error: "That subdomain is reserved." }, { status: 400 });
   const [existingInstitute] = await db.select({ id: institutes.id }).from(institutes).where(eq(institutes.subdomain, subdomain)).limit(1);
   if (existingInstitute) return NextResponse.json({ error: "That subdomain is already taken." }, { status: 409 });
+  const [verifiedEmail] = await db.select({ verifiedAt: emailVerifications.verifiedAt }).from(emailVerifications).where(eq(emailVerifications.email, ownerEmail)).orderBy(emailVerifications.createdAt).limit(1);
+  if (!verifiedEmail?.verifiedAt) return NextResponse.json({ error: "Verify the owner email before continuing to payment." }, { status: 400 });
 
   const passwordHash = await hashPassword(password);
   const [draft] = await db.insert(onboardingPayments).values({ instituteName, subdomain, ownerName, ownerEmail, passwordHash, modules, amount }).returning({ id: onboardingPayments.id });

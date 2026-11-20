@@ -18,7 +18,7 @@ export default async function Home() {
           <a href="#pricing">Pricing</a>
           <a href="#resources">Resources</a>
           <a href="/login">Log In</a>
-          <a className="demo-link" href="#demo">Request a Demo</a>
+          <a className="demo-link" href="/onboarding">Request a Demo</a>
         </div>
       </nav>
 
@@ -81,8 +81,8 @@ export default async function Home() {
         <div className="footer-main">
           <div className="footer-brand"><img src="/assets/gurukulos-logo-v2.png" alt="gurukulOS — Connected Learning, Infinite Growth" /><p>The connected operating system for growing coaching institutes.</p></div>
           <div className="footer-column"><h3>Platform</h3><a href="#features">Features</a><a href="#how-it-works">How gurukulOS Works</a><a href="#branches">Multi-Branch Management</a><a href="#reports">Reports & Insights</a></div>
-          <div className="footer-column"><h3>For Institutes</h3><a href="#owners">Institute Owners</a><a href="#teams">Branch Managers & Teams</a><a href="#students">Students & Parents</a><a href="#demo">Plan Your Setup</a></div>
-          <div className="footer-column"><h3>Resources</h3><a href="#resources">Product Guide</a><a href="#faqs">FAQs</a><a href="#support">Contact Support</a><a href="#demo">Request a Demo</a></div>
+          <div className="footer-column"><h3>For Institutes</h3><a href="#owners">Institute Owners</a><a href="#teams">Branch Managers & Teams</a><a href="#students">Students & Parents</a><a href="/onboarding">Plan Your Setup</a></div>
+          <div className="footer-column"><h3>Resources</h3><a href="#resources">Product Guide</a><a href="#faqs">FAQs</a><a href="#support">Contact Support</a><a href="/onboarding">Request a Demo</a></div>
           <div className="footer-column"><h3>Company</h3><a href="#about">About gurukulOS</a><a href="#contact">Contact</a><a href="#partners">Partner With Us</a><a href="#security">Data Security</a></div>
         </div>
         <div className="footer-cta"><div><span className="eyebrow">READY FOR A CLEARER WAY TO OPERATE?</span><h2>Run your institute with more clarity.</h2></div><a className="footer-button" href="/onboarding">Book a gurukulOS Demo</a></div>
