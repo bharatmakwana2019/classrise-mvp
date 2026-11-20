@@ -7,12 +7,13 @@ import { SignOutButton } from "../sign-out-button";
 import { db } from "../../db";
 import { institutes, users } from "../../db/schema";
 import { and, eq } from "drizzle-orm";
+import { TenantLogoManager } from "../tenant-logo-manager";
 
 export default async function DashboardPage() {
   const session = await getServerSession(authOptions);
   const subdomain = tenantFromHost((await headers()).get("host"));
   if (!session?.user?.id || !session.user.instituteId || !subdomain || session.user.tenantSubdomain !== subdomain) redirect("/login");
-  const [account] = await db.select({ userId: users.id }).from(users)
+  const [account] = await db.select({ userId: users.id, instituteName: institutes.name, logoUrl: institutes.logoUrl }).from(users)
     .innerJoin(institutes, eq(users.instituteId, institutes.id))
     .where(and(
       eq(users.id, session.user.id),
@@ -32,6 +33,7 @@ export default async function DashboardPage() {
         <span>{session.user.email}</span>
         <span>{session.user.role}</span>
       </div>
+      {session.user.role === "owner" && <TenantLogoManager instituteName={account.instituteName} logoUrl={account.logoUrl} />}
       <SignOutButton />
     </section>
   </main>;
