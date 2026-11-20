@@ -59,4 +59,5 @@
 .tenant-logo-actions button:disabled{opacity:.65;cursor:wait}
 .tenant-logo-remove{padding:10px 13px;border:1px solid #d5e1da;border-radius:7px;background:#fff;color:#526b5b;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
 .tenant-logo-status{margin:2px 0 0;color:#526b5b;font-size:12px}
+.onboarding-card .otp-actions .green-button,.onboarding-card form>button.green-button[type="button"]{width:210px;min-width:210px;padding:11px 14px;white-space:nowrap;font-size:13px}
 @media(max-width:520px){.tenant-login-card{padding:32px 24px}.tenant-login-card h1{font-size:32px}}
